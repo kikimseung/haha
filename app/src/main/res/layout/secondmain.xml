@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/second_toolbar"
+            android:layout_width="104dp"
+            android:layout_height="68dp" />
+
+        <TextView
+            android:layout_width="243dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="fill"
+            android:text="    갓잡은 피파"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="정보" />
+
+        <Button
+            android:id="@+id/btnnotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="게시판" />
+
+        <Button
+            android:id="@+id/btnmember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="구성 맴버" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/Frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linearborder"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="418dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_gravity="center"
+                android:src="@drawable/fifaclub" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="232dp"
+                android:gravity="center"
+                android:text="어서오세요.저희는 피파 상위랭커들이 모인 '갓잡은 피파'입니다.실력과 매너 둘다 갖춘 분들 환영해요! 분기별로 대면 회식도 진행하고 여러가지 이벤트도 많이 진행하고 있으니 많은 참여 부탁드립니다^^"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </FrameLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="40dp"
+        android:background="#E4E2E2"
+        app:itemTextColor="#090000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/menubottom" />
+
+
+</LinearLayout>
+

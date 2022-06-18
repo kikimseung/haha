@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment1"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/btn5"
+            android:background="@drawable/linearborder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="피파 / 갓잡은 피파"
+            android:textSize="20dp" />
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/btn6"
+            android:background="@drawable/linearborder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="디비에서 데이터 가져오기"
+            android:textSize="20dp" />
+    </LinearLayout>
+</FrameLayout>

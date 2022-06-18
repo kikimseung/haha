@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_margin="15sp"
+            android:id="@+id/notice_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/back"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="296dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="fill"
+            android:text="        [공지사항]"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="525dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="안녕하세요!\n 저희 '겜친톡'은 게임을 더 즐겁고 편하게 \n하기 위해 개발한 어플입니다.\n각자가 관심있는 카테고리의 게임을\n 선택하고 모임에 가입한 후, 구성원들과\n 게임을 즐길 수 있도록 도와줍니다.\n 각 유저분들은 서로 평점을 남길 수\n 있기 때문에 매너있는 자세와 적극적인\n 소통을 할 수록 게임에 쉽게 참여할 수\n 있습니다.  저희는 유저분들의 피드백을\n 적극 수용하여보다 나은 환경에서 게임을\n 즐길 수 있도록 노력할 것입니다. \n 오늘도 즐겁고 매너있는 시간 보내십시오. \n 감사합니다@.@"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="#E4E2E2"
+        app:itemTextColor="#090000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/menubottom" />
+
+</LinearLayout>

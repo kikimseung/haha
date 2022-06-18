@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/board_toolbar"
+            android:layout_width="104dp"
+            android:layout_height="68dp" />
+
+        <TextView
+            android:layout_width="311dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="fill"
+            android:text="       [게시판]"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnnotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="정보" />
+
+        <Button
+            android:id="@+id/btnboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="게시판" />
+
+        <Button
+            android:id="@+id/btnmember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="구성 맴버" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_margin="10dp"
+        android:text="2022.04.23\n안녕하세요. 오늘의 하이라이트 영상을 게시했습니다. 당첨되신 유저분께서는 쪽지로 연락 남겨주시면 상품 지급해드리겠습니다."
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_margin="10dp"
+        android:text="2022.04.23\n오늘은 소정의 이벤트를 진행해보려고 합니다.구성원들과 게임하는 사진을 톡방에 인증해 주시면 추첨을 통해 아이스크림 기프티콘을 드리겠습니다. 그럼 즐거운 게임 하세요~ ^^"
+        android:textSize="17dp" />
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="124dp"-->
+    <!--            android:layout_margin="10dp"-->
+    <!--            android:text="2022.04.23\n안녕하세요. 처음 참가하게 된 'nike'라고 합니다. 이런 앱을 사용해보지 않아서 어색한데 잘 부탁드려요!"-->
+    <!--            android:textSize="17dp" />-->
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="0dp"
+        android:background="#E4E2E2"
+        app:itemTextColor="#090000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/menubottom" />
+
+
+</LinearLayout>
